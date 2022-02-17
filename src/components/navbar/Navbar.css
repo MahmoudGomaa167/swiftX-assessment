@@ -1,0 +1,151 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+  height: 80px;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-list {
+  align-self: flex-end;
+}
+
+.category-list ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-list ul li {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.category-list ul li a {
+  color: #1d1f22;
+  padding: 0 16px 30px;
+  border-bottom: 2px solid transparent;
+}
+
+.category-list ul li a.active {
+  border-bottom: 2px solid #5ece7b;
+  color: #5ece7b;
+}
+
+.category-list ul li:last-of-type {
+  margin-right: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-list ul li {
+  margin-right: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-list ul li:last-of-type {
+  margin-right: 0;
+}
+
+.price-exchange {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1d1f22;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+
+.price-exchange .price-details {
+  display: flex;
+}
+
+.price-exchange .arrow {
+  margin-left: 10px;
+  display: flex;
+  align-self: center;
+}
+
+.price-exchange .arrow.active {
+  transform: rotateX(180deg);
+}
+
+.price-exchange ul {
+  position: absolute;
+  top: 35px;
+  left: -100%;
+  width: 74px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  cursor: auto;
+  background-color: #fff;
+}
+
+.price-exchange ul li {
+  font-size: 18px;
+  margin-bottom: 21px;
+  margin-right: 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.price-exchange ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 20px;
+  height: 20px;
+  background-color: #1d1f22;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

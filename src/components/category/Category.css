@@ -1,0 +1,20 @@
+.category {
+  margin-top: 160px;
+}
+
+.category h1 {
+  text-transform: capitalize;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.products {
+  margin-top: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 103px;
+  column-gap: 40px;
+  margin-bottom: 60px;
+}
